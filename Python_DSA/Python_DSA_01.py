@@ -96,3 +96,24 @@ def reverse_words(s):
     return ' '.join(reversed(s.split()))
 
 ######################################################################
+
+
+def get_pivot_index(numbers):
+    """
+    Args:
+     numbers(list_int32)
+    Returns:
+     int32
+    """
+    total = sum(numbers)
+    left = 0
+
+    for i, x in enumerate(numbers):
+        right = total - x - left
+        if right == left:
+            return i
+        left += x
+
+    return -1
+
+######################################################################
