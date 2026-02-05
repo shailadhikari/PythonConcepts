@@ -53,3 +53,35 @@ def get_intersection_with_maintained_frequency(a, b):
             counts[x] -= 1
 
     return result
+
+#####################################################################
+
+def count_alphabets(s):
+    """
+    Args:
+     s(str)
+    Returns:
+     int32
+    """
+    #First Attempt
+    '''count = 0
+    for a in s:
+        if (a >= 'a' and a <= 'z') or (a >= 'A' and a <= 'Z') :
+            count += 1
+    return count'''
+    #Most Pythonic
+    return sum(ch.isalpha() for ch in s)
+
+######################################################################
+
+def uppercase_to_lowercase(s):
+    """
+    Args:
+     s(str)
+    Returns:
+     str
+    """
+    # Write your code here.
+    return s.lower()
+
+######################################################################
