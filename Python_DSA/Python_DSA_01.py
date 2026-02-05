@@ -85,3 +85,14 @@ def uppercase_to_lowercase(s):
     return s.lower()
 
 ######################################################################
+
+def reverse_words(s):
+    """
+    Args:
+     s(str)
+    Returns:
+     str
+    """
+    return ' '.join(reversed(s.split()))
+
+######################################################################
