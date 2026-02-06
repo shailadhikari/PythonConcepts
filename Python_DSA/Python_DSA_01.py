@@ -130,5 +130,14 @@ def find_first_occurrence(s, to_find):
 
 ######################################################################
 
+def length_of_last_word(sentence):
+    """
+    Args:
+     sentence(str)
+    Returns:
+     int32
+    """
+    words = sentence.split()
+    return len(words[-1]) if words else 0
 
 ######################################################################
